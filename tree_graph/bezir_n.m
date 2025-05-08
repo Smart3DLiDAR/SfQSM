@@ -20,10 +20,10 @@ function [x, y] = bezir_n(points, dots)
             k = conv(k, [1 1]);
         end
         
-        % 计算t
+        % calculate t
         t = linspace(0, 1, dots);
         
-        % x, y 由n + 1个多项式之和得到.
+        % x and y are obtained by the sum of n + 1 polynomials.
         x = zeros(size(t));
         y = zeros(size(t));
         for i = 1 : (n + 1)
