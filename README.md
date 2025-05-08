@@ -6,4 +6,11 @@ SfQSM is a three-dimensional tree modeling method based on skeleton graph optimi
 
 Much more details of the SfQSM can be found from the article 《Self-adaptive Individual Tree Modeling Based on Skeleton Graph Optimization and Fractal Self-similarity》.
 
-The SfQSM is written in Matlab R2022b. The main function is SfQSM.m, which takes in a point cloud and a structure array specifying the needed parameters. 
+The SfQSM is written in Matlab R2022b.  is SfQSM.m, which takes in a point cloud and a structure array specifying the needed parameters. 
+
+Code structure：
+SfQSM.m:The main function.
+toolbox:This folder contains the basic function codes.
+skeleton:This folder contains the skeleton extraction code based on Laplace contraction, which is from Teacher Cao Junjie of Dalian University of Technology. This method has made some modifications to it.
+Data:This folder contains the some test point cloud datas in the format of '.txt '.
+Result:This folder contains the modeling results of the test data.
