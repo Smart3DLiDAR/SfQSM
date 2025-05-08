@@ -26,4 +26,6 @@ Data : This folder contains the some test point cloud datas in the format of '.t
 
 Result : This folder contains the modeling results of the test data.
 
+plotting : This folder contains the basic function codes of visualization from TreeQSM (https://github.com/InverseTampere/TreeQSM).
+
 The SfQSM is written in Matlab R2022b.
