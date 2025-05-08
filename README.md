@@ -22,7 +22,7 @@ toolbox : This folder contains the basic function codes.
 
 skeleton : This folder contains the skeleton extraction code based on Laplace contraction, which is from Teacher Cao Junjie of Dalian University of Technology. This method has made some modifications to it.
 
-Data : This folder contains the some test point cloud datas in the format of '.txt '.
+Data : This folder contains the test data in the format of '.txt '.
 
 Result : This folder contains the modeling results of the test data.
 
