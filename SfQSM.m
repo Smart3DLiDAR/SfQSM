@@ -79,7 +79,7 @@ finnalGp = graph(finaladj);
 [finnaltR,finnalD] = shortestpathtree(finnalGp,rootid,[1:size(finalspls,1)],'OutputForm','cell');
 finnalC = cell2mat(finnaltR');
 finnalpli = tabulate(finnalC);
-%%----Update the branch order and length after pruning short branches------------
+%%----Update the branch order and length after pruning ---------------------------
 [finnalBranch,branch2] = Stratifybrancheslevel(finalspls,finaladj,newCid,finnalpli,rootid);
 finnalBranchL = CalculatBranchLength(finalspls,newPid,finaladj,rootid,finnalBranch);
 %% 3. Fractal self-similarity optimization for individual tree modeling
