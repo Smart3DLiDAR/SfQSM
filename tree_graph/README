@@ -10,7 +10,11 @@ The SfQSM is written in Matlab R2022b.
 
 # Code structure
 
-SfQSM.m : The main function.
+Self-adjustment : This folder contains the basic function codes of skeleton points self-adjusting based on geometric features.
+
+tree_graph : This folder contains the basic function codes of individual tree graph construction with new edge weight definition.
+
+TreeModeling : This folder contains the basic function codes of individual tree modeling based on Fractal self-similarity optimization.
 
 toolbox : This folder contains the basic function codes.
 
