@@ -1,5 +1,5 @@
 function Seg = Simplifyskeleton(spls1,spls,newdelateb,Seg)
-%%----给枝干分层级--------------------------------------------------------------------------------
+%%------------------------------------------------------------------------------------------------
 %%input 
 %  spls1 : The skeleton points after pruning
 %  spls  : The skeleton points before pruning
