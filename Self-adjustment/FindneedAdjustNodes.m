@@ -16,7 +16,7 @@ for i = 1:size(spls,1)
 end
 C = cell2mat(tR');
 pli = tabulate(C);
-[Cid,Pid] = DefineTopologicalrelations(spls,adj,rootid);
+[Cid,Pid] = define_topologicalrelations(spls,adj,rootid);
 %%
 [Branch,~] = Stratifybrancheslevel(spls,adj,Cid,pli,rootid);
 BranchL = CalculatBranchLength2(spls,Pid,adj,rootid,Branch);
