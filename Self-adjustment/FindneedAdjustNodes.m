@@ -1,7 +1,7 @@
 function [nodelabel,spls_adj,pli,Pid,Cid,Branch,BranchL] = FindneedAdjustNodes(spls,Seg,rootid)
 %%--------------------------------------------------------------------------------------------------
 [~,dis] = knnsearch(spls,spls,'k',6);
-OptimalR = mean([dis(:,end);dis(1,:)'])+4*std([dis(:,end);dis(1,:)']);
+OptimalR = max(dis(:,end));
 
 [Gp,~] = BuildGraph(spls,Seg,OptimalR);
 [tR,D] = shortestpathtree(Gp,rootid,[1:size(spls,1)],'OutputForm','cell');
