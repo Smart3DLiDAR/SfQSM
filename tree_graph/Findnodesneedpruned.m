@@ -29,7 +29,11 @@ for i = 2:3
             curlratio(j) = curlength/lastBL;
         end       
     end
-    
+
+    % In this method, in order to obtain more topological details of the branches, 
+    % the initial sampling radius is set to be relatively small which is easy to form artificial branches, 
+    % Therefore, the pruning threshold(th) is set to be relatively large (mean+std)
+    % The pruning threshold can be adjusted according to actual needs
     th = mean(curlratio) + std(curlratio);
     lastorglabel = zeros(1,length(curlratio));
     tempdelete = [];
