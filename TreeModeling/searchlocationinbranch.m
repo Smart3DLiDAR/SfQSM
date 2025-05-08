@@ -1,13 +1,13 @@
 function [curbranch,curlevel,lastevel,curlevelid] = searchlocationinbranch(curid,finnalBranch)
-%%----给枝干分层级--------------------------------------------------------------------------------
+%%-------------------------------------------------------------------------------------------------
 %%input 
-%  curid           当前节点id
-%  finnalBranch    枝干
+%  curid           
+%  finnalBranch    
 %%output 
-%  curbranch       当前枝干
-%  curlevel        当前层级
-%  lastevel        上一层级
-%  curlevelid      当前枝干id
+%  curbranch       
+%  curlevel        
+%  lastevel        
+%  curlevelid      
 %--------------------------------------------------------------------------------------------------
 for i = 1:length(finnalBranch)
     for j = 1:length(finnalBranch{i,1})
