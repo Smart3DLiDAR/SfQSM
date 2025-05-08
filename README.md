@@ -19,7 +19,7 @@ toolbox : This directory includes the basic function.
 
 skeleton : This directory contains the skeleton extraction code based on Laplace contraction, originally developed by Teacher Cao Junjie from Dalian University of Technology. Our method has been modified and built upon this technique.
 
-Data : This directory holds the test data in '.txt' format. 
+Sample : This directory holds the test data in '.txt' format. 
 
 Result : This directory stores the modeling results of the test data. 
 
