@@ -72,7 +72,7 @@ for i = 1:length(Branch)
                     
                     [~,pedal] = footseeking(BeginP,stopP,adjustp);
                     if Th > theta && Th ~= 1
-                        for l = 1:inf
+                        for l = 1:10
                             tempth = Th;
                             if tempth > theta  && tempth ~= 1
                                 %If the threshold is not met, this point requires a secondary adjustment
@@ -196,7 +196,7 @@ for i = 1:length(Branch)
                     
                     [~,pedal] = footseeking(BeginP,stopP,adjustp);
                     if Th > theta && Th ~= 1
-                        for l = 1:inf
+                        for l = 1:10
                             tempth = Th;
                             if tempth > theta && tempth ~= 1
                                 adjustp = mean([pedal;adjustp]);
