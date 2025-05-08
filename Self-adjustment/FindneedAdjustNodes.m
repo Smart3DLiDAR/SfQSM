@@ -19,7 +19,7 @@ pli = tabulate(C);
 [Cid,Pid] = define_topologicalrelations(spls,adj,rootid);
 %%
 [Branch,~] = Stratifybrancheslevel(spls,adj,Cid,pli,rootid);
-BranchL = CalculatBranchLength2(spls,Pid,adj,rootid,Branch);
+BranchL = CalculatBranchLength(spls,Pid,adj,rootid,Branch);
 
 delateb = [];
 for i = 2:length(Branch)
@@ -77,7 +77,7 @@ for i=1:size(splsssss,1)
     end
 end
 
-% Hierarchical division is carried out based on 
+% Hierarchical division based on 
 % the number of bifurcation points that appear in the shortest path
 nodelabel = zeros(size(spls,1),1); 
 for i= 1:length(tR)
