@@ -4,7 +4,7 @@ joints = zeros(0,1);
 roots = zeros(0,1);
 for i=1:size(spls,1)
     links = find( adj(i,:)==1 );
-    if length(links) >2 % ·Ö²æµã
+    if length(links) >2 
         joints(end+1,1)=i;
     elseif length(links)==1
         roots(end+1,1) = i;
@@ -57,7 +57,7 @@ for i = 1:length(branch)
     end
 end
  
-branch1 = {};%´¢´æbranch
+branch1 = {};%Â´Â¢Â´Ã¦branch
 roots = setdiff(roots,rootid);
 for i = 1:length(roots)
     curtR = tR{roots(i),1};
