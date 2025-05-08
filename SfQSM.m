@@ -40,7 +40,9 @@ P.rings = computePointCloudRing(P.pts, P.k_knn, []);
 [P.cpts, ~, ~, ~, ~] = contractionByLaplacian(P, options);
 
 % -----------1.2 Fasrthest distance spherical sampling -------------------------------
-R1 = 0.2;% Initial sampling radius
+% To obtain more details, the initial sampling scale(R1) in the experiment 
+% is not set large and can be changed as needed
+R1 = 0.2;
 SP = SelfadjustSampling(P,R1);
 % -----------1.3 Skeleton points self-adjusting --------------------------------------
 [~,rootid] = min(SP.spls(:,3));
