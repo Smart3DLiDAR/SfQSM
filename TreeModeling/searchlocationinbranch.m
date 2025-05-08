@@ -36,6 +36,5 @@ if curlevelid(1) ~= 1
 else
     lastevel = [];
 end
-%curblength = finnalBranchL{curbranchid(1),1}(curbranchid(2),1);
-%curblength = finnalD(curid);
+
 end
