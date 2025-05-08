@@ -26,6 +26,6 @@ Data : This folder contains the test data in the format of '.txt '.
 
 Result : This folder contains the modeling results of the test data.
 
-plotting : This folder contains the basic function codes of visualization from TreeQSM (https://github.com/InverseTampere/TreeQSM).
+plotting : This folder contains the basic function codes of visualization from TreeQSM.
 
 The SfQSM is written in Matlab R2022b.
