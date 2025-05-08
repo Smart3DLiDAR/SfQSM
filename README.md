@@ -1,31 +1,28 @@
 # SfQSM
-SfQSM is a three-dimensional tree modeling method based on skeleton graph optimization and fractal self-similarity.This modeling method comprises three main steps: 
-(1)Skeleton points self-adjusting based on geometric features;
-(2)Edge weight definition for the tree graph;
-(3)Fractal self-similarity optimization for individual tree modeling. 
+SfQSM is a three-dimensional tree modeling method based on skeleton graph optimization and fractal self-similarity. This method consists of three main steps:ⅰ) Skeleton points self-adjusting based on geometric features, ⅱ) Edge weight definition for the tree graph, and ⅲ) Fractal self-similarity optimization for individual tree modeling. 
 
-Much more details of the SfQSM can be found from the article 《Self-adaptive Individual Tree Modeling Based on Skeleton Graph Optimization and Fractal Self-similarity》.
+More detailed information about SfQSM can be found in the article "Self-adaptive Individual Tree Modeling Based on Skeleton Graph Optimization and Fractal Self-similarity." 
 
-If use this code, should be indicated the source.
+If you use this code, please remember to cite this paper.
 
 # Code structure
 
 SfQSM.m : The main function.
 
-Self-adjustment : This folder contains the basic function codes of skeleton points self-adjusting based on geometric features.
+Self-adjustment : This directory contains the fundamental function codes for adjusting skeleton points based on geometric features. 
 
-tree_graph : This folder contains the basic function codes of individual tree graph construction with new edge weight definition.
+tree_graph : This directory includes the essential function codes for constructing individual tree graphs with a new edge weight definition. 
 
-TreeModeling : This folder contains the basic function codes of individual tree modeling based on Fractal self-similarity optimization.
+TreeModeling : This directory encompasses the fundamental function codes for modeling individual trees based on Fractal self-similarity optimization. 
 
-toolbox : This folder contains the basic function codes.
+toolbox : This directory includes the basic function.
 
-skeleton : This folder contains the skeleton extraction code based on Laplace contraction, which is from Teacher Cao Junjie of Dalian University of Technology. This method has made some modifications to it.
+skeleton : This directory contains the skeleton extraction code based on Laplace contraction, originally developed by Teacher Cao Junjie from Dalian University of Technology. Our method has been modified and built upon this technique.
 
-Data : This folder contains the test data in the format of '.txt '.
+Data : This directory holds the test data in '.txt' format. 
 
-Result : This folder contains the modeling results of the test data.
+Result : This directory stores the modeling results of the test data. 
 
-plotting : This folder contains the basic function codes of visualization from TreeQSM.
+plotting : This directory includes the basic function codes for visualization from TreeQSM.
 
-The SfQSM is written in Matlab R2022b.
+The SfQSM is programmed in Matlab R2022b.
