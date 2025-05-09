@@ -14,6 +14,7 @@ function P = SelfadjustSampling(P, R)
 %%
 [~,Linearity] = define_contractionnodeshape(P.cpts,P.rings);
 [P.spls, P.corresp] = FarthestSamplingbysphere(P,Linearity,R);
+P.spls_adj = connect_by_inherit_neigh(P.cpts, P.spls, P.corresp, P.rings);
 
 % Each raw point cloud corresponds to a skeleton point
 % According to the row indexes with the same corresponding relationship, 
