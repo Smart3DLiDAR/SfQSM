@@ -51,14 +51,13 @@ for i = 1:length(finnalBranch)
                     newRadius(id,:) = [tempR i link(ind,6)];
                 end
                 
-                % 找到该节点的子节点，判断其是否正确
                 if id ~= curbranch(end)
                     cid = curbranch(k+1);
                     [sonrow,~] = find(link(:,2) == cid);
                     Lc = subbranchlength(cid);
-                    minR = tempR*((Lc/cursubbranchL)^curth(2));
+                    minR = tempR*((Lc/cursubbranchL)^2);
                     newth = (log(Radius(cid)/tempR))/(log(Lc/cursubbranchL));
-                    if Radius(cid)<= tempR && Radius(cid) >= minR*0.75%在合理范围内正常
+                    if Radius(cid)<= tempR && Radius(cid) >= minR
                         link(sonrow,5:6) = [1 newth];
                         normallabel(cid) = 1;
                     else
@@ -70,7 +69,7 @@ for i = 1:length(finnalBranch)
                 tempR = Radius(rootid);
                 newRadius(id,:) = [tempR i 0];
             else
-                pid = newPid(id,1);%当前子节点
+                pid = newPid(id,1);
                 cursubbranchLP = subbranchlength(pid);
                 tempth = cursubbranchL/cursubbranchLP;
                 if Radius(id)<= newRadius(pid) 
@@ -88,14 +87,13 @@ for i = 1:length(finnalBranch)
                     TH{i,1}{j,1}(1,:) = [1 curth(2)];
                 end
 
-                % 找到所有子圆柱 判断其是否正确
                 if id ~= curbranch(end)
                     cid = curbranch(k+1);
                     [sonrow,~] = find(link(:,2) == cid);
                     Lc = subbranchlength(cid);
-                    minR = tempR*((Lc/cursubbranchL)^curth(2));
+                    minR = tempR*((Lc/cursubbranchL)^2);
                     newth = (log(Radius(cid)/tempR))/(log(Lc/cursubbranchL));
-                    if Radius(cid)<= tempR && Radius(cid) >= minR*0.75
+                    if Radius(cid)<= tempR && Radius(cid) >= minR
                         link(sonrow,5:6) = [1 newth];
                         normallabel(cid) = 1;
                     else
