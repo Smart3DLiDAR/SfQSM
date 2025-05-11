@@ -20,7 +20,11 @@ for j = 1:size(spls,1)
             end
         end
     end
-    cursontreelength(j) = dis;
+    if ~isempty(dis)
+        cursontreelength(j) = dis;
+    else
+        cursontreelength(j) = 0;
+    end
 end
 
 [~,col] = find(cursontreelength==0);
