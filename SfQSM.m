@@ -44,6 +44,7 @@ P.rings = computePointCloudRing(P.pts, P.k_knn, []);
 % is not set large and can be changed as needed
 R1 = 0.2;
 SP = SelfadjustSampling(P,R1);
+SP = AdjustStump(SP);
 % -----------1.3 Skeleton points self-adjusting --------------------------------------
 [~,rootid] = min(SP.spls(:,3));
 [nodelabel,~,pli,Pid,Cid,Branch,~] = FindneedAdjustNodes(SP.spls,SP.seg,rootid);
@@ -78,6 +79,7 @@ newBranchL = CalculatBranchLength(newspls1,newPid,newadj,rootid,newBranch);
 [finalspls,finaladj,newPid,newCid,link,Radius2] = Findnodesneedpruned(newspls1, ...
     newadj,newspls.Seg,newspls.Radius,newBranch,newBranchL,newPid,rootid);
 finnalGp = graph(finaladj);
+[~,rootid] = min(finalspls(:,3));
 [finnaltR,finnalD] = shortestpathtree(finnalGp,rootid,[1:size(finalspls,1)],'OutputForm','cell');
 finnalC = cell2mat(finnaltR');
 finnalpli = tabulate(finnalC);
