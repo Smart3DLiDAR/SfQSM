@@ -13,7 +13,7 @@ for i = 1:length(finnalBranch)
                 pid = newPid(id,1);%
                 cursubbranchLP = subbranchlength(pid);
                 % compared the sub-branch length
-                minR = Radius(pid)*((cursubbranchL/cursubbranchLP)^1.5);
+                minR = Radius(pid)*((cursubbranchL/cursubbranchLP)^2);
                 if Radius(id)<= Radius(pid) && Radius(id) >= minR
                     normallabel(id,:)=1;% 1：normal；0：abnormal
                 end
