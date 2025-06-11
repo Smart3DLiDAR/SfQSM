@@ -3,7 +3,7 @@ SfQSM is a three-dimensional tree modeling method based on skeleton graph optimi
 
 More detailed information about SfQSM can be found in the article "Self-adaptive Individual Tree Modeling Based on Skeleton Graph Optimization and Fractal Self-similarity." To link to this article: https://doi.org/10.1016/j.plaphe.2025.100060
 
-If you use this code, please remember to cite this paper：Zhenyang Hui, Yating He, Shuanggen Jin, Wenbo Chen, Penggen Cheng, Yao Yevenyo Ziggah,Self-adaptive individual tree modeling based on skeleton graph optimization and fractal self-similarity,Plant Phenomics,Volume 7, Issue 2,2025,100060,ISSN 2643-6515,DOI:10.1016/j.plaphe.2025.100060.
+If you use this code, please remember to cite this paper：Zhenyang Hui, Yating He, Shuanggen Jin, Wenbo Chen, Penggen Cheng and Yao Yevenyo Ziggah Ziggah. Self-adaptive individual tree modeling based on skeleton graph optimization and fractal self-similarity, Plant Phenomics, 2025, 7(2): 100060. doi: 10.1016/j.plaphe.2025.100060. 
 
 
 # Code structure
