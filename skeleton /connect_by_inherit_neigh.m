@@ -37,8 +37,8 @@ end
 %%
 A = zeros( length(spls), length(spls) );
 for pIdx=1:length(pts)    
-    ns =neigh{pIdx};%每个点的一环领域集
-    pc = corresp(pIdx);%每个点的一环领域集
+    ns =neigh{pIdx};%姣忎釜鐐圭殑涓�鐜鍩熼泦
+    pc = corresp(pIdx);%姣忎釜鐐圭殑涓�鐜鍩熼泦
     if pc == 0
         warning('some points have no correspondence');continue;
     end
